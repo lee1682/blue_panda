@@ -27,26 +27,19 @@
 
 <body <?php body_class(); ?>>
 
-    <!-- wrapper -->
-    <div class="wrapper">
+    <div class="container-large">
 
-        <!-- header -->
-        <header class="header clear" role="banner">
+        <header class="header" role="banner">
 
-            <!-- logo -->
-            <div class="logo">
+            <div class="">
                 <a href="<?php echo home_url(); ?>">
-                    <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+                    <p>Blue Panda</p>
                 </a>
             </div>
-            <!-- /logo -->
 
-            <!-- nav -->
-            <nav class="nav" role="navigation">
-                <?php html5blank_nav(); ?>
+            <nav class="" role="navigation">
+                <!-- <?php html5blank_nav(); ?> -->
             </nav>
-            <!-- /nav -->
+
 
         </header>
-        <!-- /header -->

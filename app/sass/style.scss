@@ -20,3 +20,44 @@
 @import "partials/sidebar";
 @import "partials/footer";
 @import "partials/print";
+
+//hero
+.hero {
+  background: $teal;
+  height: 90vh;
+
+  h1 {
+    line-height: 1;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: 200;
+    color: $white;
+  }
+
+  &_text {
+  }
+}
+
+//buttons
+
+.btn-outline {
+  border: 2px solid $white;
+  color: $white;
+  background-color: inherit;
+  padding: 1rem 2rem;
+
+  &--md {
+    @extend .btn-outline;
+    font-size: 1rem;
+  }
+  &--lg {
+    @extend .btn-outline;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    background-color: $teal-light;
+  }
+}
