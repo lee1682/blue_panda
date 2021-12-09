@@ -1,0 +1,20 @@
+//buttons
+.btn-outline {
+  border: 2px solid $white;
+  color: $white;
+  background-color: inherit;
+  padding: 1rem 2rem;
+
+  &--md {
+    @extend .btn-outline;
+    font-size: 1rem;
+  }
+  &--lg {
+    @extend .btn-outline;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    background-color: $teal-light;
+  }
+}

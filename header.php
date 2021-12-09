@@ -26,20 +26,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-    <div class="container-large">
-
-        <header class="header" role="banner">
-
-            <div class="">
-                <a href="<?php echo home_url(); ?>">
-                    <p>Blue Panda</p>
-                </a>
-            </div>
-
-            <nav class="" role="navigation">
-                <!-- <?php html5blank_nav(); ?> -->
-            </nav>
-
+    <div class="">
+        <header>
 
         </header>

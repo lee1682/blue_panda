@@ -8,7 +8,7 @@
 @import "modules/variables";
 @import "modules/mixins";
 @import "modules/fonts";
-@import "modules/grid";
+@import "modules/buttons";
 
 // Partials
 @import "partials/reset";
@@ -21,43 +21,9 @@
 @import "partials/footer";
 @import "partials/print";
 
-//hero
-.hero {
-  background: $teal;
-  height: 90vh;
+//templates
+@import "templates/hero.scss";
 
-  h1 {
-    line-height: 1;
-    margin: 0;
-  }
-
-  h2 {
-    font-weight: 200;
-    color: $white;
-  }
-
-  &_text {
-  }
-}
-
-//buttons
-
-.btn-outline {
-  border: 2px solid $white;
-  color: $white;
-  background-color: inherit;
-  padding: 1rem 2rem;
-
-  &--md {
-    @extend .btn-outline;
-    font-size: 1rem;
-  }
-  &--lg {
-    @extend .btn-outline;
-    font-size: 2rem;
-  }
-
-  &:hover {
-    background-color: $teal-light;
-  }
-}
+// Grid
+@import "sass-flexbox/scss/flex-box.scss";
+// http://sassflexboxgrid.com/
