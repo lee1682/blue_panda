@@ -21,8 +21,11 @@
 @import "partials/footer";
 @import "partials/print";
 
-//templates
-@import "templates/hero.scss";
+//template
+//
+// sections
+@import "templates/sections/hero.scss";
+@import "templates/sections/text-image.scss";
 
 // Grid
 @import "sass-flexbox/scss/flex-box.scss";

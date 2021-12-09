@@ -1,0 +1,19 @@
+.text-image {
+  padding: 2rem;
+
+  @media (min-width: 1040px) {
+    padding: 15rem 2rem;
+  }
+
+  &_image {
+    img {
+      background-color: grey;
+      height: 150px;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
+
+  &_text {
+  }
+}

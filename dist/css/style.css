@@ -114,7 +114,14 @@ h5 {
 p {
   color: #444;
   font-family: "roboto";
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -336,6 +343,20 @@ h3 {
   margin-top: 10rem;
 }
 
+.text-image {
+  padding: 2rem;
+}
+@media (min-width: 1040px) {
+  .text-image {
+    padding: 15rem 2rem;
+  }
+}
+.text-image_image img {
+  background-color: grey;
+  height: 150px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
 .row {
   box-sizing: border-box;
   margin: 0 auto;

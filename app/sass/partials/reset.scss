@@ -62,7 +62,15 @@ h5 {
 p {
   color: $text-color;
   font-family: "roboto";
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-weight: 200;
+
+  margin: 0;
+  padding: 0;
 }
 
 img {
