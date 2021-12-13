@@ -1,0 +1,20 @@
+.three-col-text {
+  background: $regal-blue;
+  @media (min-width: $laptop) {
+    padding: 7.5rem 2rem 7.5rem 2rem;
+  }
+
+  h2,
+  h3 {
+    color: $white;
+  }
+
+  h2 {
+    margin-bottom: 6rem;
+  }
+
+  p {
+    color: $green-white;
+    margin-bottom: 4rem;
+  }
+}
