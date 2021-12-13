@@ -70,4 +70,32 @@
         </h2>
         <?php echo do_shortcode('[contact-form-7 id="25" title="Contact form 1"]'); ?>
     </div>
+    <div class="col-sm-12 col-md-6 contact_info">
+        <div class="address">
+            <h2>
+                Contact Details
+            </h2>
+            <ul>
+                <h4>Phone</h4>
+                <li> 01223 123 321</li>
+                <h4>Email</h4>
+                <li> Contact@email.com</li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h2>
+                Social
+            </h2>
+            <ul>
+                <h4>FB</h4>
+                <li> facebook icon</li>
+                <h4>instagram</h4>
+                <li> facebook icon</li>
+            </ul>
+
+        </div>
+
+    </div>
 </section>

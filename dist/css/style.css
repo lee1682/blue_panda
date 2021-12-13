@@ -1214,7 +1214,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+label {
   color: #04396c;
   font-family: "oswald";
   line-height: 1;
@@ -1494,7 +1495,7 @@ h3 {
   margin: 1rem auto;
 }
 .hero_text button {
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 
 @media (min-width: 1040px) {
@@ -1544,9 +1545,12 @@ h3 {
 .contact p {
   color: #04396c;
 }
+.contact h2 {
+  margin-bottom: 4rem;
+}
 @media (min-width: 1040px) {
   .contact_contact-form .wpcf7 {
-    width: 75%;
+    padding-right: 25rem;
   }
 }
 .contact_contact-form .wpcf7 .wpcf7-text {
@@ -1558,4 +1562,26 @@ h3 {
   border: none;
   border-bottom: 2px solid #04396c;
   width: 100%;
+}
+.contact_contact-form .wpcf7 .wpcf7-form p {
+  margin-bottom: 2rem;
+}
+.contact_contact-form .wpcf7 .wpcf7-form p label {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0;
+}
+.contact_contact-form .wpcf7 .wpcf7-submit {
+  width: 100%;
+}
+.contact_info .address {
+  margin-bottom: 4rem;
+}
+.contact_info ul h3 {
+  color: #04396c;
+  margin-bottom: 4rem;
+}
+.contact_info ul li {
+  color: #04396c;
+  margin-bottom: 2rem;
 }
