@@ -1,6 +1,5 @@
 <?php /* Template Name: Front Page */?>
 <?php get_header()?>
-
 <section class="hero row">
     <div class="hero_text col-sm-12 col-md-6 ">
         <h1>Blue Panda Agency</h1>
@@ -61,6 +60,14 @@
                 Maps</p>
         </div>
     </div>
+</section>
 
+<section class="contact row">
 
+    <div class="col-sm-12 col-md-6 contact_contact-form">
+        <h2>
+            Contact Us
+        </h2>
+        <?php echo do_shortcode('[contact-form-7 id="25" title="Contact form 1"]'); ?>
+    </div>
 </section>

@@ -57,17 +57,33 @@ h3 {
 h4 {
   font-size: 2rem;
   font-weight: 400;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 h5 {
   font-size: 1.8rem;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   color: $text-color;
   font-family: "roboto";
   font-size: 1.7rem;
+}
+
+ul {
+  margin-block-start: 0rem;
+  padding-inline-start: 0;
+  li {
+    color: $text-color;
+    font-family: "roboto";
+    font-size: 1.7rem;
+    font-weight: 400;
+    list-style: none;
+  }
 }
 
 .tagline {

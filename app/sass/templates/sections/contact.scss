@@ -1,0 +1,26 @@
+.contact {
+  background-color: $white;
+  h2,
+  p {
+    color: $regal-blue;
+  }
+  &_contact-form {
+    .wpcf7 {
+      @media (min-width: $laptop) {
+        width: 75%;
+      }
+      .wpcf7-text {
+        border: none;
+        border-bottom: 2px solid $regal-blue;
+        width: 100%;
+      }
+      .wpcf7-textarea {
+        border: none;
+        border-bottom: 2px solid $regal-blue;
+        width: 100%;
+      }
+    }
+  }
+  &_text {
+  }
+}

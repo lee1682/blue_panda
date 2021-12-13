@@ -1161,7 +1161,7 @@
   font-style: normal;
 }
 */
-.btn-outline, .btn-outline--lg, .btn-outline--md {
+.btn-outline, .wpcf7-submit, .btn-outline--lg, .btn-outline--md {
   border: 2px solid white;
   color: white;
   background-color: inherit;
@@ -1173,8 +1173,13 @@
 .btn-outline--lg {
   font-size: 2rem;
 }
-.btn-outline:hover, .btn-outline--md:hover, .btn-outline--lg:hover {
+.btn-outline:hover, .wpcf7-submit:hover, .btn-outline--md:hover, .btn-outline--lg:hover {
   background-color: #8de4af;
+}
+
+.wpcf7-submit {
+  border-color: #04396c;
+  color: #04396c;
 }
 
 /**
@@ -1233,17 +1238,33 @@ h3 {
 h4 {
   font-size: 2rem;
   font-weight: 400;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 h5 {
   font-size: 1.8rem;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   color: #444;
   font-family: "roboto";
   font-size: 1.7rem;
+}
+
+ul {
+  margin-block-start: 0rem;
+  padding-inline-start: 0;
+}
+ul li {
+  color: #444;
+  font-family: "roboto";
+  font-size: 1.7rem;
+  font-weight: 400;
+  list-style: none;
 }
 
 .tagline {
@@ -1514,4 +1535,27 @@ h3 {
 .three-col-text p {
   color: #e9eee0;
   margin-bottom: 4rem;
+}
+
+.contact {
+  background-color: white;
+}
+.contact h2,
+.contact p {
+  color: #04396c;
+}
+@media (min-width: 1040px) {
+  .contact_contact-form .wpcf7 {
+    width: 75%;
+  }
+}
+.contact_contact-form .wpcf7 .wpcf7-text {
+  border: none;
+  border-bottom: 2px solid #04396c;
+  width: 100%;
+}
+.contact_contact-form .wpcf7 .wpcf7-textarea {
+  border: none;
+  border-bottom: 2px solid #04396c;
+  width: 100%;
 }

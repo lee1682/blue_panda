@@ -18,3 +18,9 @@
     background-color: $teal-light;
   }
 }
+
+.wpcf7-submit {
+  @extend .btn-outline;
+  border-color: $regal-blue;
+  color: $regal-blue;
+}
