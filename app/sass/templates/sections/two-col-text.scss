@@ -1,0 +1,11 @@
+.two-col-text {
+  h2 {
+    text-align: center;
+    margin: 6rem auto;
+  }
+  p {
+    @media (min-width: $laptop) {
+      padding-right: 15rem;
+    }
+  }
+}

@@ -6,16 +6,21 @@
   &_text {
     h1 {
       line-height: 1;
-      margin: 2rem auto;
+      margin: 5rem auto 2rem;
     }
     h2 {
       font-weight: 200;
       color: $white;
-      margin: 1rem auto;
+      margin: 2rem auto;
     }
-
     button {
-      margin-top: 20rem;
+      bottom: 0;
+      margin-bottom: 4rem;
+      position: absolute;
+      width: calc(100% - 4rem);
+      @media (min-width: $laptop) {
+        width: fit-content;
+      }
     }
   }
 }

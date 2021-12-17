@@ -1,6 +1,5 @@
 .contact {
   background-color: $white;
-
   h2,
   p {
     color: $regal-blue;
@@ -19,25 +18,20 @@
         border-bottom: 2px solid $regal-blue;
         width: 100%;
       }
-
       .wpcf7-textarea {
         border: none;
         border-bottom: 2px solid $regal-blue;
         width: 100%;
       }
-
       .wpcf7-form {
         p {
           margin-bottom: 2rem;
           label {
             font-size: 2rem;
             font-weight: 400;
-
-            padding: 0;
           }
         }
       }
-
       .wpcf7-submit {
         width: 100%;
       }
@@ -45,18 +39,18 @@
   }
 
   &_info {
-    .address {
+    .details {
       margin-bottom: 4rem;
-    }
 
-    ul {
-      h3 {
-        color: $regal-blue;
-        margin-bottom: 4rem;
-      }
-      li {
-        color: $regal-blue;
-        margin-bottom: 2rem;
+      ul {
+        h3 {
+          color: $regal-blue;
+          margin-bottom: 4rem;
+        }
+        li {
+          color: $regal-blue;
+          margin-bottom: 2rem;
+        }
       }
     }
   }

@@ -1487,15 +1487,23 @@ h3 {
 }
 .hero_text h1 {
   line-height: 1;
-  margin: 2rem auto;
+  margin: 5rem auto 2rem;
 }
 .hero_text h2 {
   font-weight: 200;
   color: white;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 .hero_text button {
-  margin-top: 20rem;
+  bottom: 0;
+  margin-bottom: 4rem;
+  position: absolute;
+  width: calc(100% - 4rem);
+}
+@media (min-width: 1040px) {
+  .hero_text button {
+    width: fit-content;
+  }
 }
 
 @media (min-width: 1040px) {
@@ -1569,19 +1577,45 @@ h3 {
 .contact_contact-form .wpcf7 .wpcf7-form p label {
   font-size: 2rem;
   font-weight: 400;
-  padding: 0;
 }
 .contact_contact-form .wpcf7 .wpcf7-submit {
   width: 100%;
 }
-.contact_info .address {
+.contact_info .details {
   margin-bottom: 4rem;
 }
-.contact_info ul h3 {
+.contact_info .details ul h3 {
   color: #04396c;
   margin-bottom: 4rem;
 }
-.contact_info ul li {
+.contact_info .details ul li {
   color: #04396c;
   margin-bottom: 2rem;
+}
+
+.two-col-text h2 {
+  text-align: center;
+  margin: 6rem auto;
+}
+@media (min-width: 1040px) {
+  .two-col-text p {
+    padding-right: 15rem;
+  }
+}
+
+.web-development .hero {
+  background-color: white;
+}
+.web-development .hero h2 {
+  color: #5cdb95;
+}
+.web-development .hero .btn-outline, .web-development .hero .btn-outline--md, .web-development .hero .btn-outline--lg, .web-development .hero .wpcf7-submit {
+  background: #5cdb95;
+}
+.web-development .text-image {
+  background: #5cdb95;
+}
+.web-development .text-image h2,
+.web-development .text-image p {
+  color: white;
 }

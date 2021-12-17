@@ -1,0 +1,18 @@
+.web-development {
+  .hero {
+    background-color: $white;
+    h2 {
+      color: $teal;
+    }
+    .btn-outline {
+      background: $teal;
+    }
+  }
+  .text-image {
+    background: $teal;
+    h2,
+    p {
+      color: $white;
+    }
+  }
+}
