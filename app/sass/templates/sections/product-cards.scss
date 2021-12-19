@@ -1,0 +1,59 @@
+.product-cards {
+  background-color: $white;
+  height: 100vh;
+  @media (min-width: $laptop) {
+    padding-top: 10rem;
+  }
+  h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+  &_card {
+    background-color: inherit;
+    border: 1px solid $regal-blue;
+    border-radius: 0px 0px 25px 25px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+
+    h3 {
+      font-size: 3em;
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    &--desc {
+      background-color: $regal-blue;
+      color: $white;
+      text-align: center;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    &--price {
+      color: $regal-blue;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0.5rem;
+    }
+
+    &--item {
+      color: $regal-blue;
+      font-style: 2.2rem;
+      font-weight: 200;
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+
+  // button {
+  //   border: 1px solid $regal-blue;
+  //   color: $regal-blue;
+  //   margin: 0 auto;
+  //   width: 100%;
+  // }
+}

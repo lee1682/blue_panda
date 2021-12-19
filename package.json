@@ -17,6 +17,8 @@
     "sass": "^1.44.0"
   },
   "dependencies": {
-    "@drewbot/sass-flexbox-grid": "^2.0.7"
+    "@drewbot/sass-flexbox-grid": "^2.0.7",
+    "glider-js": "^1.7.7",
+    "swiper": "^7.3.3"
   }
 }

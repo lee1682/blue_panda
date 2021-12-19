@@ -5,8 +5,10 @@
  */
 
 // Grid
+@import "swipper/swipper.scss";
+
+// swipper
 @import "sass-flexbox/scss/flex-box.scss";
-// http://sassflexboxgrid.com/
 
 // Modules
 @import "modules/variables";
@@ -33,6 +35,7 @@
 @import "templates/sections/three-col-text";
 @import "templates/sections/contact";
 @import "templates/sections/two-col-text";
+@import "templates/sections/product-cards";
 //
 //Pages
 @import "templates/pages/web-development";
