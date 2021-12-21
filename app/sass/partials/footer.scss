@@ -3,5 +3,20 @@
  * ---
  */
 
+.footer {
+  font-size: 2rem;
+  background-color: $regal-blue;
+  h2,
+  h3 {
+    font-weight: 300;
+    color: $white;
+  }
 
-.footer {}
+  ul {
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}

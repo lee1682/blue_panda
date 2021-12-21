@@ -1,14 +1,17 @@
 .product-cards {
   background-color: $white;
-  height: 100vh;
-  @media (min-width: $laptop) {
-    padding-top: 10rem;
-  }
+  height: auto;
+  // @media (min-width: $laptop) {
+  //   padding-top: 5rem;
+  // }
   h2 {
     text-align: center;
     width: 100%;
-    margin-top: 0rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
+    @media (min-width: $laptop) {
+      margin-bottom: 5rem;
+    }
   }
   &_card {
     background-color: inherit;

@@ -19,7 +19,7 @@
       position: absolute;
       width: calc(100% - 4rem);
       @media (min-width: $laptop) {
-        width: fit-content;
+        width: fit-content !important;
       }
     }
   }

@@ -1,4 +1,4 @@
-.web-development {
+.seo {
   .hero {
     background-color: $white;
     h2 {
@@ -15,7 +15,23 @@
       color: $white;
     }
   }
+  .two-col-text {
+    background: $white;
+    h2,
+    h3,
+    p {
+      color: $regal-blue;
+    }
+  }
 
+  .three-col-text {
+    background: $white;
+    h2,
+    h3,
+    p {
+      color: $regal-blue;
+    }
+  }
   .contact {
     background-color: $green-white;
     .wpcf7-text,

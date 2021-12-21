@@ -6,6 +6,11 @@
   }
   h2 {
     margin-bottom: 4rem;
+    @media (min-width: $laptop) {
+      margin-top: 8rem;
+      font-size: 4rem;
+      font-weight: 300;
+    }
   }
 
   &_contact-form {
@@ -22,6 +27,9 @@
         border: none;
         border-bottom: 2px solid $regal-blue;
         width: 100%;
+        @media (min-width: $laptop) {
+          height: 7.5rem;
+        }
       }
       .wpcf7-form {
         p {

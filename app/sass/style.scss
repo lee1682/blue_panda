@@ -5,7 +5,7 @@
  */
 
 // Grid
-@import "swipper/swipper.scss";
+// @import "swipper/swipper.scss";
 
 // swipper
 @import "sass-flexbox/scss/flex-box.scss";
@@ -30,6 +30,7 @@
 //template
 //
 // sections
+@import "templates/sections/audit-form";
 @import "templates/sections/hero.scss";
 @import "templates/sections/text-image.scss";
 @import "templates/sections/three-col-text";
@@ -39,3 +40,4 @@
 //
 //Pages
 @import "templates/pages/web-development";
+@import "templates/pages/seo";

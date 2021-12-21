@@ -1,4 +1,11 @@
 .two-col-text {
+  background-color: $regal-blue;
+  h2,
+  h3,
+  p {
+    color: $white;
+  }
+
   h2 {
     text-align: center;
     margin: 6rem auto;

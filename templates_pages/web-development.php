@@ -4,3 +4,5 @@
 <?php get_template_part("templates_sections/two-col-text-image"); ?>
 <?php get_template_part("templates_sections/two-col-text"); ?>
 <?php get_template_part("templates_sections/product-thumbs"); ?>
+<?php get_template_part("templates_sections/contact-form"); ?>
+<?php get_footer()?>
