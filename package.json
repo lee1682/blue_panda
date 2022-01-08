@@ -4,7 +4,8 @@
   "description": "Powerful shell for rapidly deploying your WordPress projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "critical": "node critical.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
+    "gulp-penthouse": "^0.2.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.44.0"
