@@ -19,11 +19,10 @@
     //     tests: {}
     // });
     </script>
-
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="">
-        <header>
 
-        </header>
+    <header>
+        <?php get_template_part("templates_sections/nav"); ?>
+    </header>

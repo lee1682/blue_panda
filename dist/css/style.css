@@ -1610,11 +1610,15 @@ h3 {
 .contact p {
   color: #04396c;
 }
-.contact h2 {
+.contact_text {
+  display: flex;
+  align-items: center;
+}
+.contact_text h2 {
   margin-bottom: 4rem;
 }
 @media (min-width: 1040px) {
-  .contact h2 {
+  .contact_text h2 {
     margin-top: 8rem;
     font-size: 4rem;
     font-weight: 300;
@@ -1728,6 +1732,88 @@ h3 {
   font-weight: 200;
   text-align: center;
   margin: 1rem;
+}
+
+.main-nav {
+  background-color: #5cdb95;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 1040px) {
+  .main-nav {
+    flex-direction: row;
+    background: white;
+    justify-content: flex-end;
+  }
+}
+.main-nav_top-bar {
+  background-color: white;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1040px) {
+  .main-nav_top-bar {
+    width: 50%;
+  }
+}
+.main-nav_top-bar .logo p {
+  font-size: 2em;
+  font-weight: 500;
+  color: #04396c;
+  padding-left: 2rem;
+}
+.main-nav_top-bar button {
+  background: none;
+  border: none;
+  font-size: 3em;
+  color: #5cdb95;
+}
+.main-nav ul {
+  display: none;
+  margin: 0;
+}
+@media (min-width: 1040px) {
+  .main-nav ul {
+    display: flex;
+    align-items: center;
+    width: 25%;
+  }
+  .main-nav ul li {
+    flex-grow: 1;
+  }
+  .main-nav ul li a {
+    color: #04396c;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+.active .main-nav_top-bar {
+  justify-content: flex-end;
+}
+.active .logo {
+  display: none;
+}
+.active ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
+}
+.active ul li {
+  margin: 2rem;
+}
+.active ul li a {
+  color: white;
+  font-size: 1em;
 }
 
 .web-development .contact {

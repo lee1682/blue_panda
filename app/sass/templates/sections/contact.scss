@@ -4,12 +4,17 @@
   p {
     color: $regal-blue;
   }
-  h2 {
-    margin-bottom: 4rem;
-    @media (min-width: $laptop) {
-      margin-top: 8rem;
-      font-size: 4rem;
-      font-weight: 300;
+
+  &_text {
+    display: flex;
+    align-items: center;
+    h2 {
+      margin-bottom: 4rem;
+      @media (min-width: $laptop) {
+        margin-top: 8rem;
+        font-size: 4rem;
+        font-weight: 300;
+      }
     }
   }
 

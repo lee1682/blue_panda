@@ -1,0 +1,138 @@
+.main-nav {
+  background-color: $teal;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  @media (min-width: $laptop) {
+    flex-direction: row;
+    background: $white;
+    justify-content: flex-end;
+  }
+  &_top-bar {
+    background-color: $white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: $laptop) {
+      width: 50%;
+    }
+    .logo p {
+      font-size: 2em;
+      font-weight: 500;
+      color: $regal-blue;
+      padding-left: 2rem;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-size: 3em;
+      color: $teal;
+    }
+  }
+
+  ul {
+    display: none;
+    margin: 0;
+    @media (min-width: $laptop) {
+      display: flex;
+      align-items: center;
+      width: 25%;
+      li {
+        flex-grow: 1;
+        a {
+          color: $regal-blue;
+          display: block;
+          text-align: center;
+          font-weight: 500;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  .main-nav_top-bar {
+    justify-content: flex-end;
+  }
+  .logo {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    li {
+      margin: 2rem;
+      a {
+        color: $white;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+// .main-nav {
+//   height: 10vh;
+//   background-color: red;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   position: relative;
+//   z-index: 10;
+//   &_top-bar {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     @media (min-width: $laptop) {
+//     }
+//   }
+
+//   &_logo {
+//     background: white;
+//     display: inline-block;
+//     height: 50px;
+//     width: 50px;
+//   }
+
+//   button {
+//     height: 75px;
+//     width: 75px;
+//     background-color: grey;
+//     display: inline-block;
+//     @media (min-width: $laptop) {
+//       display: none;
+//     }
+//   }
+
+//   &_items {
+//     display: none;
+//     @media (min-width: $laptop) {
+//       display: flex;
+//     }
+
+//     li {
+//       a {
+//         color: chartreuse;
+//       }
+//     }
+//   }
+// }
+
+// .active {
+//   background-color: blue;
+//   height: 1000px;
+//   justify-content: flex-start;
+
+//   .main-nav_items {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
