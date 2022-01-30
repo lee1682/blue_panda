@@ -1,9 +1,9 @@
-<nav class="main-nav">
+<nav class="main-nav active" id="main-nav">
     <div class="main-nav_top-bar">
         <div class="logo">
             <p></p>
         </div>
-        <button class="hide-md">☰</button>
+        <button class="hide-md" id="nav-btn">☰</button>
     </div>
 
     <ul>
