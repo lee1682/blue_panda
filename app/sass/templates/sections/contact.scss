@@ -1,8 +1,8 @@
 .contact {
-  background-color: $white;
+  background-color: $primary-1;
   h2,
   p {
-    color: $regal-blue;
+    color: $primary-2;
   }
 
   &_text {
@@ -24,13 +24,15 @@
         padding-right: 25rem;
       }
       .wpcf7-text {
+        background-color: inherit;
         border: none;
-        border-bottom: 2px solid $regal-blue;
+        border-bottom: 2px solid $primary-2;
         width: 100%;
       }
       .wpcf7-textarea {
+        background-color: inherit;
         border: none;
-        border-bottom: 2px solid $regal-blue;
+        border-bottom: 2px solid $primary-2;
         width: 100%;
         @media (min-width: $laptop) {
           height: 7.5rem;
@@ -41,7 +43,7 @@
           margin-bottom: 2rem;
           label {
             font-size: 2rem;
-            font-weight: 400;
+            // font-weight: 400;
           }
         }
       }
@@ -57,11 +59,11 @@
 
       ul {
         h3 {
-          color: $regal-blue;
+          color: $primary-2;
           margin-bottom: 4rem;
         }
         li {
-          color: $regal-blue;
+          color: $primary-2;
           margin-bottom: 2rem;
         }
       }

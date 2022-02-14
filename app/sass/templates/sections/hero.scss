@@ -1,6 +1,6 @@
 //hero
 .hero {
-  background: $teal;
+  background: $white;
   height: 90vh;
   padding: 5rem 2rem 0rem 2rem;
   &_text {
@@ -10,7 +10,7 @@
     }
     h2 {
       font-weight: 200;
-      color: $white;
+      color: $primary-1;
       margin: 2rem auto;
     }
     button {
@@ -21,6 +21,8 @@
       @media (min-width: $laptop) {
         width: fit-content !important;
       }
+      color: $primary-2;
+      border-color: $primary-2;
     }
   }
 }

@@ -4,14 +4,15 @@
  */
 
 .footer {
-  font-size: 2rem;
   background-color: $dark-blue;
+  font-size: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   h2,
   h3 {
     font-weight: 300;
     color: $white;
   }
-
   ul {
     li {
       a {

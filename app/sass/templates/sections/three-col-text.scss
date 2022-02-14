@@ -1,21 +1,26 @@
 .three-col-text {
-  background: $regal-blue;
+  background: $white;
   @media (min-width: $laptop) {
-    padding: 7.5rem 2rem 7.5rem 2rem;
+    width: 75%;
   }
   h2,
   h3 {
-    color: $white;
+    color: $primary-2;
   }
   h2 {
     margin-bottom: 6rem;
+    text-align: center;
   }
   &_text {
-    margin-bottom: 6rem;
+    // margin-bottom: 6rem;
 
     p {
-      color: $green-white;
+      color: $primary-2;
       margin-bottom: 4rem;
+      @media (min-width: $laptop) {
+        // height: 120px;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

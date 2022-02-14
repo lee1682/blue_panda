@@ -1411,8 +1411,10 @@ header {
  * ---
  */
 .footer {
-  font-size: 2rem;
   background-color: #1c1c1c;
+  font-size: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 .footer h2,
 .footer h3 {
@@ -1497,9 +1499,24 @@ h3 {
 .audit-form {
   background-color: #04396c;
 }
-.audit-form h2,
-.audit-form p {
+.audit-form_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.audit-form_text h2,
+.audit-form_text p {
   color: white;
+  margin: 0;
+}
+.audit-form_text h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1040px) {
+  .audit-form_text h2 {
+    margin-bottom: 0;
+  }
 }
 .audit-form .wpcf7 {
   padding-top: 4rem;
@@ -1510,7 +1527,7 @@ h3 {
   margin-bottom: 2rem;
   width: 100%;
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   background: inherit;
 }
 .audit-form .wpcf7 label {
@@ -1518,13 +1535,13 @@ h3 {
 }
 .audit-form .wpcf7 .wpcf7-submit {
   background-color: inherit;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   padding: 1rem 5rem;
   width: 100%;
 }
 .audit-form .wpcf7 .wpcf7-submit:hover {
-  background-color: white;
+  background-color: #04396c;
   color: #04396c;
 }
 @media (min-width: 1040px) {
@@ -1535,7 +1552,7 @@ h3 {
 }
 
 .hero {
-  background: #5cdb95;
+  background: white;
   height: 90vh;
   padding: 5rem 2rem 0rem 2rem;
 }
@@ -1545,7 +1562,7 @@ h3 {
 }
 .hero_text h2 {
   font-weight: 200;
-  color: white;
+  color: #88cdfd;
   margin: 2rem auto;
 }
 .hero_text button {
@@ -1553,6 +1570,8 @@ h3 {
   margin-bottom: 4rem;
   position: absolute;
   width: calc(100% - 4rem);
+  color: #04396c;
+  border-color: #04396c;
 }
 @media (min-width: 1040px) {
   .hero_text button {
@@ -1560,6 +1579,10 @@ h3 {
   }
 }
 
+.text-image {
+  background-color: #88cdfd;
+  color: white;
+}
 @media (min-width: 1040px) {
   .text-image {
     padding: 7.5rem 2rem 7.5rem 2rem;
@@ -1581,30 +1604,33 @@ h3 {
 }
 
 .three-col-text {
-  background: #04396c;
+  background: white;
 }
 @media (min-width: 1040px) {
   .three-col-text {
-    padding: 7.5rem 2rem 7.5rem 2rem;
+    width: 75%;
   }
 }
 .three-col-text h2,
 .three-col-text h3 {
-  color: white;
+  color: #04396c;
 }
 .three-col-text h2 {
   margin-bottom: 6rem;
-}
-.three-col-text_text {
-  margin-bottom: 6rem;
+  text-align: center;
 }
 .three-col-text_text p {
-  color: #e9eee0;
+  color: #04396c;
   margin-bottom: 4rem;
+}
+@media (min-width: 1040px) {
+  .three-col-text_text p {
+    margin-bottom: 2rem;
+  }
 }
 
 .contact {
-  background-color: white;
+  background-color: #88cdfd;
 }
 .contact h2,
 .contact p {
@@ -1630,11 +1656,13 @@ h3 {
   }
 }
 .contact_contact-form .wpcf7 .wpcf7-text {
+  background-color: inherit;
   border: none;
   border-bottom: 2px solid #04396c;
   width: 100%;
 }
 .contact_contact-form .wpcf7 .wpcf7-textarea {
+  background-color: inherit;
   border: none;
   border-bottom: 2px solid #04396c;
   width: 100%;
@@ -1649,7 +1677,6 @@ h3 {
 }
 .contact_contact-form .wpcf7 .wpcf7-form p label {
   font-size: 2rem;
-  font-weight: 400;
 }
 .contact_contact-form .wpcf7 .wpcf7-submit {
   width: 100%;
@@ -1667,12 +1694,12 @@ h3 {
 }
 
 .two-col-text {
-  background-color: #04396c;
+  background-color: white;
 }
 .two-col-text h2,
 .two-col-text h3,
 .two-col-text p {
-  color: white;
+  color: #04396c;
 }
 .two-col-text h2 {
   text-align: center;
@@ -1735,7 +1762,7 @@ h3 {
 }
 
 .main-nav {
-  background-color: #5cdb95;
+  background-color: #88cdfd;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1758,7 +1785,7 @@ h3 {
 }
 @media (min-width: 1040px) {
   .main-nav_top-bar {
-    width: 50%;
+    width: auto;
   }
 }
 .main-nav_top-bar .logo p {
@@ -1771,7 +1798,12 @@ h3 {
   background: none;
   border: none;
   font-size: 3em;
-  color: #5cdb95;
+  color: #88cdfd;
+}
+.main-nav .menu {
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 .main-nav ul {
   display: none;
@@ -1781,7 +1813,7 @@ h3 {
   .main-nav ul {
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 100%;
   }
   .main-nav ul li {
     flex-grow: 1;
@@ -1803,11 +1835,11 @@ h3 {
     display: none;
   }
   .active ul {
+    align-items: baseline;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    height: 90vh;
   }
   .active ul li {
     margin: 2rem;
@@ -1829,45 +1861,13 @@ h3 {
   background: white;
 }
 
-.seo .hero {
-  background-color: white;
-}
-.seo .hero h2 {
-  color: #5cdb95;
-}
-.seo .hero .btn-outline, .seo .hero .btn-outline--md, .seo .hero .btn-outline--lg, .seo .hero .wpcf7-submit {
-  background: #5cdb95;
-}
-.seo .text-image {
-  background: #5cdb95;
-}
-.seo .text-image h2,
-.seo .text-image p {
-  color: white;
-}
-.seo .two-col-text {
-  background: white;
-}
-.seo .two-col-text h2,
-.seo .two-col-text h3,
-.seo .two-col-text p {
-  color: #04396c;
-}
-.seo .three-col-text {
-  background: white;
-}
-.seo .three-col-text h2,
-.seo .three-col-text h3,
-.seo .three-col-text p {
-  color: #04396c;
-}
-.seo .contact {
+.paid-traffic .contact {
   background-color: #e9eee0;
 }
-.seo .contact .wpcf7-text,
-.seo .contact .wpcf7-textarea {
+.paid-traffic .contact .wpcf7-text,
+.paid-traffic .contact .wpcf7-textarea {
   background-color: inherit;
 }
-.seo .contact button {
+.paid-traffic .contact button {
   background: white;
 }

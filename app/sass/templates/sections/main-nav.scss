@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $teal;
+  background-color: $primary-1;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -17,12 +17,12 @@
     display: flex;
     justify-content: space-between;
     @media (min-width: $laptop) {
-      width: 50%;
+      width: auto;
     }
     .logo p {
       font-size: 2em;
       font-weight: 500;
-      color: $regal-blue;
+      color: $primary-2;
       padding-left: 2rem;
     }
 
@@ -30,8 +30,14 @@
       background: none;
       border: none;
       font-size: 3em;
-      color: $teal;
+      color: $primary-1;
     }
+  }
+
+  .menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
   }
 
   ul {
@@ -40,11 +46,11 @@
     @media (min-width: $laptop) {
       display: flex;
       align-items: center;
-      width: 25%;
+      width: 100%;
       li {
         flex-grow: 1;
         a {
-          color: $regal-blue;
+          color: $primary-2;
           display: block;
           text-align: center;
           font-weight: 500;
@@ -64,11 +70,11 @@
       display: none;
     }
     ul {
+      align-items: baseline;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
-      height: 90vh;
 
       li {
         margin: 2rem;

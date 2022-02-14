@@ -15,12 +15,12 @@
   }
 
   &:hover {
-    background-color: $teal-light;
+    background-color: $primary-1-light;
   }
 }
 
 .wpcf7-submit {
   @extend .btn-outline;
-  border-color: $regal-blue;
-  color: $regal-blue;
+  border-color: $primary-2;
+  color: $primary-2;
 }

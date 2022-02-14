@@ -1,4 +1,6 @@
 .text-image {
+  background-color: $primary-1;
+  color: $white;
   @media (min-width: $laptop) {
     padding: 7.5rem 2rem 7.5rem 2rem;
   }

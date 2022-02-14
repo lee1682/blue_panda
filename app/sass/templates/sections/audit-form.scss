@@ -1,10 +1,22 @@
 .audit-form {
-  background-color: $regal-blue;
-  h2,
-  p {
-    color: $white;
+  background-color: $primary-2;
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2,
+    p {
+      color: $white;
+      margin: 0;
+    }
+    h2 {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      @media (min-width: $laptop) {
+        margin-bottom: 0;
+      }
+    }
   }
-
   .wpcf7 {
     padding-top: 4rem;
     .wpcf7-email,
@@ -13,24 +25,22 @@
       margin-bottom: 2rem;
       width: 100%;
       border: none;
-      border-bottom: 2px solid $white;
+      border-bottom: 1px solid $white;
       background: inherit;
     }
-
     label {
       color: $white;
     }
-
     .wpcf7-submit {
       background-color: inherit;
-      border: 2px solid $white;
+      border: 1px solid $white;
       color: $white;
       padding: 1rem 5rem;
       width: 100%;
 
       &:hover {
-        background-color: $white;
-        color: $regal-blue;
+        background-color: $primary-2;
+        color: $primary-2;
       }
 
       @media (min-width: $laptop) {
@@ -39,25 +49,4 @@
       }
     }
   }
-
-  //   .wpcf7 {
-  //     @media (min-width: $laptop) {
-  //     }
-
-  //     .wpcf7-text {
-  //       color: $white;
-  //     }
-
-  //     .wpcf7-textarea {
-  //     }
-  //     .wpcf7-form {
-  //       p {
-  //         label {
-  //           color: $white;
-  //         }
-  //       }
-  //     }
-  //     .wpcf7-submit {
-  //     }
-  //   }
 }
