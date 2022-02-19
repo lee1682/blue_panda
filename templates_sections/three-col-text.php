@@ -1,7 +1,7 @@
 <section class="three-col-text row">
     <div class="col-sm-12">
         <h2><?php the_field('three_col_text_heading'); ?>
-        </h2 class="seperator">
+        </h2>
     </div>
 
     <?php if( have_rows('three_col_text_columns') ): ?>

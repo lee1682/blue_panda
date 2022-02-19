@@ -7,12 +7,21 @@
   }
 
   h2 {
-    text-align: center;
+    text-align: left;
     margin: 6rem auto;
+  }
+
+  h2::after {
+    content: " ";
+    display: block;
+    border: 2px solid $primary-1;
+    width: 100px;
+    margin-top: 2rem;
   }
   p {
     @media (min-width: $laptop) {
       padding-right: 15rem;
+      font-size: 2em;
     }
   }
 }

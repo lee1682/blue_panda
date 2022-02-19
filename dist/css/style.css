@@ -1163,6 +1163,7 @@
 */
 .btn-outline, .wpcf7-submit, .btn-outline--lg, .btn-outline--md {
   border: 2px solid white;
+  border-radius: 50px;
   color: white;
   background-color: inherit;
   padding: 1rem 2rem;
@@ -1413,8 +1414,12 @@ header {
 .footer {
   background-color: #1c1c1c;
   font-size: 2rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+}
+@media (min-width: 1040px) {
+  .footer {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 .footer h2,
 .footer h3 {
@@ -1541,7 +1546,7 @@ h3 {
   width: 100%;
 }
 .audit-form .wpcf7 .wpcf7-submit:hover {
-  background-color: #04396c;
+  background-color: #8de4af;
   color: #04396c;
 }
 @media (min-width: 1040px) {
@@ -1581,35 +1586,29 @@ h3 {
 
 .text-image {
   background-color: #88cdfd;
+}
+.text-image_text h2,
+.text-image_text p {
   color: white;
+}
+.text-image_text h2::after {
+  content: " ";
+  display: block;
+  border: 2px solid #04396c;
+  width: 100px;
+  margin-top: 2rem;
+}
+.text-image_text p {
+  font-size: 3em;
 }
 @media (min-width: 1040px) {
   .text-image {
     padding: 7.5rem 2rem 7.5rem 2rem;
   }
 }
-.text-image_image {
-  width: 100%;
-}
-.text-image_image img {
-  background-color: grey;
-  height: 150px;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-@media (min-width: 1040px) {
-  .text-image_image img {
-    height: 100%;
-  }
-}
 
 .three-col-text {
   background: white;
-}
-@media (min-width: 1040px) {
-  .three-col-text {
-    width: 75%;
-  }
 }
 .three-col-text h2,
 .three-col-text h3 {
@@ -1617,15 +1616,24 @@ h3 {
 }
 .three-col-text h2 {
   margin-bottom: 6rem;
-  text-align: center;
+  text-align: left;
+}
+.three-col-text h2::after {
+  content: " ";
+  display: block;
+  border: 2px solid #04396c;
+  width: 100px;
+  margin-top: 2rem;
 }
 .three-col-text_text p {
   color: #04396c;
   margin-bottom: 4rem;
+  font-size: 2.5em;
 }
 @media (min-width: 1040px) {
   .three-col-text_text p {
     margin-bottom: 2rem;
+    padding-right: 3rem;
   }
 }
 
@@ -1702,12 +1710,20 @@ h3 {
   color: #04396c;
 }
 .two-col-text h2 {
-  text-align: center;
+  text-align: left;
   margin: 6rem auto;
+}
+.two-col-text h2::after {
+  content: " ";
+  display: block;
+  border: 2px solid #88cdfd;
+  width: 100px;
+  margin-top: 2rem;
 }
 @media (min-width: 1040px) {
   .two-col-text p {
     padding-right: 15rem;
+    font-size: 2em;
   }
 }
 
@@ -1771,9 +1787,10 @@ h3 {
 }
 @media (min-width: 1040px) {
   .main-nav {
-    flex-direction: row;
     background: white;
+    border-bottom: 1px solid #88cdfd;
     justify-content: flex-end;
+    flex-direction: row;
   }
 }
 .main-nav_top-bar {
@@ -1848,26 +1865,4 @@ h3 {
     color: white;
     font-size: 1em;
   }
-}
-
-.web-development .contact {
-  background-color: #e9eee0;
-}
-.web-development .contact .wpcf7-text,
-.web-development .contact .wpcf7-textarea {
-  background-color: inherit;
-}
-.web-development .contact button {
-  background: white;
-}
-
-.paid-traffic .contact {
-  background-color: #e9eee0;
-}
-.paid-traffic .contact .wpcf7-text,
-.paid-traffic .contact .wpcf7-textarea {
-  background-color: inherit;
-}
-.paid-traffic .contact button {
-  background: white;
 }

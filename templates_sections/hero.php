@@ -4,7 +4,9 @@
 
 
         <h2><?php the_field('hero_sub-heading'); ?></h2>
-        <button class="btn-outline">Get In Touch</button>
+        <a href="#contact">
+            <button class="btn-outline">Get In Touch</button>
+        </a>
     </div>
     <div class="hero_img col-sm-12 col-md-6 ">
         <img src="" alt="">

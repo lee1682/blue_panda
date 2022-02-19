@@ -8,11 +8,11 @@
             <ul>
                 <h3>Phone</h3>
                 <li> <a href="">
-                        123 321 123 321
+                        07889 239784
                     </a></li>
                 <h3>Email</h3>
                 <li> <a href="">
-                        Contact@email.com
+                        info@bluepanda.co.uk
                     </a>
                 </li>
             </ul>
@@ -21,10 +21,10 @@
 
     <div class="col-xs-12 col-md-3 ">
         <div class="social">
-            <h2>
+            <!-- <h2>
                 Social
-            </h2>
-            <ul>
+            </h2> -->
+            <!-- <ul>
                 <li>
                     <a href="">
                         ICON
@@ -35,7 +35,7 @@
                         ICON
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
     </div>
@@ -48,19 +48,19 @@
             <ul>
 
                 <li>
-                    <a href=""> Website Page</a>
+                    <a href="/home"> Home</a>
                 </li>
 
                 <li>
-                    <a href=""> Website Page</a>
+                    <a href="/search-engine-optimisation"> SEO</a>
                 </li>
 
                 <li>
-                    <a href=""> Website Page</a>
+                    <a href="/pay-per-click"> PPC</a>
                 </li>
 
                 <li>
-                    <a href=""> Website Page</a>
+                    <a href="/web-development"> Web Devlopment</a>
                 </li>
 
             </ul>

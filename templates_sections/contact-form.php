@@ -1,4 +1,4 @@
-<section class="contact row">
+<section class="contact row" id="contact">
     <div class="col-sm-12 col-md-4 col-md-offset-2 contact_text">
         <h2>
             Contact Us

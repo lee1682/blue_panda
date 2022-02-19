@@ -1,7 +1,7 @@
 .three-col-text {
   background: $white;
   @media (min-width: $laptop) {
-    width: 75%;
+    // width: 75%;
   }
   h2,
   h3 {
@@ -9,7 +9,15 @@
   }
   h2 {
     margin-bottom: 6rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  h2::after {
+    content: " ";
+    display: block;
+    border: 2px solid $primary-2;
+    width: 100px;
+    margin-top: 2rem;
   }
   &_text {
     // margin-bottom: 6rem;
@@ -17,9 +25,11 @@
     p {
       color: $primary-2;
       margin-bottom: 4rem;
+      font-size: 2.5em;
       @media (min-width: $laptop) {
         // height: 120px;
         margin-bottom: 2rem;
+        padding-right: 3rem;
       }
     }
   }

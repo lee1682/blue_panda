@@ -1,4 +1,4 @@
-<section class="audit-form row">
+<section class="audit-form row" id="contact">
     <div class="col-sm-12 col-md-offset-1 col-md-4 audit-form_text">
         <h2>Free Site Audit</h2>
         <p>complete the form to receive your free site audit</p>

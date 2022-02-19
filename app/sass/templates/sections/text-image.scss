@@ -1,19 +1,39 @@
 .text-image {
   background-color: $primary-1;
-  color: $white;
+
+  &_text {
+    h2,
+    p {
+      color: $white;
+    }
+
+    h2::after {
+      content: " ";
+      display: block;
+      border: 2px solid $primary-2;
+      width: 100px;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 3em;
+    }
+  }
+
   @media (min-width: $laptop) {
     padding: 7.5rem 2rem 7.5rem 2rem;
   }
-  &_image {
-    width: 100%;
-    img {
-      background-color: grey;
-      height: 150px;
-      margin-bottom: 2rem;
-      width: 100%;
-      @media (min-width: $laptop) {
-        height: 100%;
-      }
-    }
-  }
+
+  // &_image {
+  //   width: 100%;
+  //   img {
+  //     background-color: grey;
+  //     height: 150px;
+  //     margin-bottom: 2rem;
+  //     width: 100%;
+  //     @media (min-width: $laptop) {
+  //       height: 100%;
+  //     }
+  //   }
+  // }
 }
